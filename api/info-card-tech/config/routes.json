@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/info-card-teches",
+      "handler": "info-card-tech.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/info-card-teches/count",
+      "handler": "info-card-tech.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/info-card-teches/:id",
+      "handler": "info-card-tech.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/info-card-teches",
+      "handler": "info-card-tech.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/info-card-teches/:id",
+      "handler": "info-card-tech.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/info-card-teches/:id",
+      "handler": "info-card-tech.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

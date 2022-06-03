@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items_footers",
+  "info": {
+    "name": "ItemsFooter"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_link": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "footers": {
+      "via": "items_footers",
+      "collection": "footer"
+    }
+  }
+}

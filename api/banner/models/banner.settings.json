@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banners",
+  "info": {
+    "name": "banner",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mainTitle": {
+      "type": "string"
+    },
+    "content1": {
+      "type": "string"
+    },
+    "content2": {
+      "type": "string"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "mainTitle2": {
+      "type": "string"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "linkTryButton": {
+      "type": "string"
+    },
+    "linkContactButton": {
+      "type": "string"
+    }
+  }
+}

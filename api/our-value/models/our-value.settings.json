@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "our_values",
+  "info": {
+    "name": "Our value"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "decs": {
+      "type": "string"
+    }
+  }
+}

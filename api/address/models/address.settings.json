@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "name": "Address"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Address": {
+      "type": "richtext"
+    },
+    "companies": {
+      "collection": "company",
+      "via": "addresses",
+      "dominant": true
+    }
+  }
+}

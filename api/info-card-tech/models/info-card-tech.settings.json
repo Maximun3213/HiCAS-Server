@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "info_card_teches",
+  "info": {
+    "name": "infoCardTech"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "card_teches": {
+      "via": "info_card_teches",
+      "collection": "card-tech"
+    }
+  }
+}

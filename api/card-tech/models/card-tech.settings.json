@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "card_teches",
+  "info": {
+    "name": "CardTech",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "info_card_teches": {
+      "collection": "info-card-tech",
+      "via": "card_teches",
+      "dominant": true
+    }
+  }
+}

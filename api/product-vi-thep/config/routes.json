@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/product-vi-thep",
+      "handler": "product-vi-thep.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/product-vi-thep",
+      "handler": "product-vi-thep.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/product-vi-thep",
+      "handler": "product-vi-thep.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
