@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "card_prices",
+  "info": {
+    "name": "cardPrice",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "decs": {
+      "type": "string"
+    },
+    "color_card": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "service_card_prices": {
+      "via": "card_prices",
+      "collection": "service-card-price"
+    },
+    "Price": {
+      "type": "string"
+    },
+    "Time": {
+      "type": "string"
+    }
+  }
+}

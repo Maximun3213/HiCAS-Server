@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/service-card-prices",
+      "handler": "service-card-price.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/service-card-prices/count",
+      "handler": "service-card-price.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/service-card-prices/:id",
+      "handler": "service-card-price.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/service-card-prices",
+      "handler": "service-card-price.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/service-card-prices/:id",
+      "handler": "service-card-price.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/service-card-prices/:id",
+      "handler": "service-card-price.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

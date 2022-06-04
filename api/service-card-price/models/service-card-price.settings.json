@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_card_prices",
+  "info": {
+    "name": "service_card_price"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "YesOrNo": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
+    },
+    "card_prices": {
+      "via": "service_card_prices",
+      "collection": "card-price",
+      "dominant": true
+    }
+  }
+}
