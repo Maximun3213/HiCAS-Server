@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/email-get-news",
+      "handler": "email-get-news.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/email-get-news/count",
+      "handler": "email-get-news.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/email-get-news/:id",
+      "handler": "email-get-news.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/email-get-news",
+      "handler": "email-get-news.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/email-get-news/:id",
+      "handler": "email-get-news.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/email-get-news/:id",
+      "handler": "email-get-news.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

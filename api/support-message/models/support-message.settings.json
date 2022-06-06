@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "headers",
+  "collectionName": "support_messages",
   "info": {
-    "name": "header",
-    "description": ""
+    "name": "Support Message"
   },
   "options": {
     "increments": true,
@@ -12,18 +11,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "Name": {
       "type": "string"
     },
-    "url": {
+    "Phone": {
       "type": "string"
     },
-    "dropdown": {
-      "type": "boolean"
+    "Email": {
+      "type": "string"
     },
-    "dropdown_items": {
-      "via": "headers",
-      "collection": "dropdown-item"
+    "Content": {
+      "type": "richtext"
     }
   }
 }

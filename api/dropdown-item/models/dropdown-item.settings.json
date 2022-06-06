@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "headers",
+  "collectionName": "dropdown_items",
   "info": {
-    "name": "header",
-    "description": ""
+    "name": "DropdownItem"
   },
   "options": {
     "increments": true,
@@ -15,15 +14,13 @@
     "title": {
       "type": "string"
     },
-    "url": {
+    "link": {
       "type": "string"
     },
-    "dropdown": {
-      "type": "boolean"
-    },
-    "dropdown_items": {
-      "via": "headers",
-      "collection": "dropdown-item"
+    "headers": {
+      "collection": "header",
+      "via": "dropdown_items",
+      "dominant": true
     }
   }
 }

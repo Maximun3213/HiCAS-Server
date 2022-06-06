@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "email_get_news",
+  "info": {
+    "name": "EmailGetNews"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Email": {
+      "type": "string"
+    }
+  }
+}
