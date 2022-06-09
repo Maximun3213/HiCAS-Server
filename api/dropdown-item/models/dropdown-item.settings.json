@@ -2,24 +2,39 @@
   "kind": "collectionType",
   "collectionName": "dropdown_items",
   "info": {
-    "name": "DropdownItem"
+    "name": "DropdownItem",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "link": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "headers": {
-      "collection": "header",
       "via": "dropdown_items",
+      "collection": "header",
       "dominant": true
     }
   }

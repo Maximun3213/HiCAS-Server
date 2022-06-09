@@ -10,14 +10,23 @@
     "timestamps": true,
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "items_footers": {
-      "collection": "items-footer",
       "via": "footers",
+      "collection": "items-footer",
       "dominant": true
     }
   }

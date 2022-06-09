@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/trial-vithep-banners",
+      "handler": "trial-vithep-banner.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/trial-vithep-banners/count",
+      "handler": "trial-vithep-banner.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/trial-vithep-banners/:id",
+      "handler": "trial-vithep-banner.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/trial-vithep-banners",
+      "handler": "trial-vithep-banner.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/trial-vithep-banners/:id",
+      "handler": "trial-vithep-banner.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/trial-vithep-banners/:id",
+      "handler": "trial-vithep-banner.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
